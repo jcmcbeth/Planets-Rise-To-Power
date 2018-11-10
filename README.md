@@ -1,4 +1,4 @@
-# Planets-Rise-To-Power
+# Planets: Rise To Power
 SWR 2.0 MUD
 
 Not to be confused with the SWR 1.0 mud called Rise IN Power.
