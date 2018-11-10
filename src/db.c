@@ -2449,7 +2449,7 @@ void mobprog_file_read( MOB_INDEX_DATA * mob, char *f )
 
   if( !( progfile = fopen( MUDProgfile, "r" ) ) )
   {
-    bug( "%s: couldn't open mudprog file", __FUNCTION__ );
+    bug( "%s: couldn't open mudprog file", __func__ );
     return;
   }
 
@@ -2462,7 +2462,7 @@ void mobprog_file_read( MOB_INDEX_DATA * mob, char *f )
 
     if( letter != '>' )
     {
-      bug( "%s: MUDPROG char", __FUNCTION__ );
+      bug( "%s: MUDPROG char", __func__ );
       break;
     }
 
@@ -2471,12 +2471,12 @@ void mobprog_file_read( MOB_INDEX_DATA * mob, char *f )
     switch ( mprg->type )
     {
       case ERROR_PROG:
-	bug( "%s: mudprog file type error", __FUNCTION__ );
+	bug( "%s: mudprog file type error", __func__ );
 	DISPOSE( mprg );
 	continue;
 
       case IN_FILE_PROG:
-	bug( "%s: Nested file programs are not allowed.", __FUNCTION__ );
+	bug( "%s: Nested file programs are not allowed.", __func__ );
 	DISPOSE( mprg );
 	continue;
 
@@ -2512,7 +2512,7 @@ void mprog_read_programs( FILE * fp, MOB_INDEX_DATA * mob )
 
     if( letter != '>' )
     {
-      bug( "%s: vnum %d MUDPROG char", __FUNCTION__, mob->vnum );
+      bug( "%s: vnum %d MUDPROG char", __func__, mob->vnum );
       exit( 1 );
     }
     CREATE( mprg, MPROG_DATA, 1 );
@@ -2525,7 +2525,7 @@ void mprog_read_programs( FILE * fp, MOB_INDEX_DATA * mob )
     switch ( mprg->type )
     {
       case ERROR_PROG:
-	bug( "%s: vnum %d MUDPROG type.", __FUNCTION__, mob->vnum );
+	bug( "%s: vnum %d MUDPROG type.", __func__, mob->vnum );
 	exit( 1 );
 
       case IN_FILE_PROG:
@@ -2564,7 +2564,7 @@ void objprog_file_read( OBJ_INDEX_DATA * obj, char *f )
 
   if( !( progfile = fopen( MUDProgfile, "r" ) ) )
   {
-    bug( "%s: couldn't open mudprog file", __FUNCTION__ );
+    bug( "%s: couldn't open mudprog file", __func__ );
     return;
   }
 
@@ -2577,7 +2577,7 @@ void objprog_file_read( OBJ_INDEX_DATA * obj, char *f )
 
     if( letter != '>' )
     {
-      bug( "%s: MUDPROG char", __FUNCTION__ );
+      bug( "%s: MUDPROG char", __func__ );
       break;
     }
 
@@ -2586,12 +2586,12 @@ void objprog_file_read( OBJ_INDEX_DATA * obj, char *f )
     switch ( mprg->type )
     {
       case ERROR_PROG:
-	bug( "%s: mudprog file type error", __FUNCTION__ );
+	bug( "%s: mudprog file type error", __func__ );
 	DISPOSE( mprg );
 	continue;
 
       case IN_FILE_PROG:
-	bug( "%s: Nested file programs are not allowed.", __FUNCTION__ );
+	bug( "%s: Nested file programs are not allowed.", __func__ );
 	DISPOSE( mprg );
 	continue;
 
@@ -2627,7 +2627,7 @@ void oprog_read_programs( FILE * fp, OBJ_INDEX_DATA * obj )
 
     if( letter != '>' )
     {
-      bug( "%s: vnum %d MUDPROG char", __FUNCTION__, obj->vnum );
+      bug( "%s: vnum %d MUDPROG char", __func__, obj->vnum );
       exit( 1 );
     }
     CREATE( mprg, MPROG_DATA, 1 );
@@ -2640,7 +2640,7 @@ void oprog_read_programs( FILE * fp, OBJ_INDEX_DATA * obj )
     switch ( mprg->type )
     {
       case ERROR_PROG:
-	bug( "%s: vnum %d MUDPROG type.", __FUNCTION__, obj->vnum );
+	bug( "%s: vnum %d MUDPROG type.", __func__, obj->vnum );
 	exit( 1 );
 
       case IN_FILE_PROG:
@@ -2680,7 +2680,7 @@ void roomprog_file_read( ROOM_INDEX_DATA * room, char *f )
 
   if( !( progfile = fopen( MUDProgfile, "r" ) ) )
   {
-    bug( "%s: couldn't open mudprog file", __FUNCTION__ );
+    bug( "%s: couldn't open mudprog file", __func__ );
     return;
   }
 
@@ -2693,7 +2693,7 @@ void roomprog_file_read( ROOM_INDEX_DATA * room, char *f )
 
     if( letter != '>' )
     {
-      bug( "%s: MUDPROG char", __FUNCTION__ );
+      bug( "%s: MUDPROG char", __func__ );
       break;
     }
 
@@ -2702,12 +2702,12 @@ void roomprog_file_read( ROOM_INDEX_DATA * room, char *f )
     switch ( mprg->type )
     {
       case ERROR_PROG:
-	bug( "%s: mudprog file type error", __FUNCTION__ );
+	bug( "%s: mudprog file type error", __func__ );
 	DISPOSE( mprg );
 	continue;
 
       case IN_FILE_PROG:
-	bug( "%s: Nested file programs are not allowed.", __FUNCTION__ );
+	bug( "%s: Nested file programs are not allowed.", __func__ );
 	DISPOSE( mprg );
 	continue;
 
@@ -2744,7 +2744,7 @@ void rprog_read_programs( FILE * fp, ROOM_INDEX_DATA * room )
 
     if( letter != '>' )
     {
-      bug( "%s: vnum %d MUDPROG char", __FUNCTION__, room->vnum );
+      bug( "%s: vnum %d MUDPROG char", __func__, room->vnum );
       exit( 1 );
     }
     CREATE( mprg, MPROG_DATA, 1 );
@@ -2757,7 +2757,7 @@ void rprog_read_programs( FILE * fp, ROOM_INDEX_DATA * room )
     switch ( mprg->type )
     {
       case ERROR_PROG:
-	bug( "%s: vnum %d MUDPROG type.", __FUNCTION__, room->vnum );
+	bug( "%s: vnum %d MUDPROG type.", __func__, room->vnum );
 	exit( 1 );
 
       case IN_FILE_PROG:

@@ -584,7 +584,7 @@ void transfer_char( CHAR_DATA * ch, CHAR_DATA * victim,
 {
   if( !victim->in_room )
   {
-    bug( "%s: victim in NULL room: %s", __FUNCTION__, victim->name );
+    bug( "%s: victim in NULL room: %s", __func__, victim->name );
     return;
   }
 

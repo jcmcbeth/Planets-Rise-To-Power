@@ -69,7 +69,7 @@ float fread_float( FILE *fp )
   {
     if( feof( fp ) )
     {
-      bug( "%s: EOF encountered on read.", __FUNCTION__ );
+      bug( "%s: EOF encountered on read.", __func__ );
       if( fBootDb )
       {
 	shutdown_mud( "Corrupt file somewhere." );
@@ -91,7 +91,7 @@ float fread_float( FILE *fp )
 
   if( !isdigit( (int) c ) )
   {
-    bug( "%s: bad format. (%c)", __FUNCTION__, c );
+    bug( "%s: bad format. (%c)", __func__, c );
 
     if( fBootDb )
       exit( EXIT_FAILURE );
@@ -110,7 +110,7 @@ float fread_float( FILE *fp )
 
       if( feof( fp ) )
       {
-	bug( "%s: EOF encountered on read.", __FUNCTION__ );
+	bug( "%s: EOF encountered on read.", __func__ );
 	if( fBootDb )
 	  exit( EXIT_FAILURE );
 	return number;
@@ -475,7 +475,7 @@ char *fread_line( FILE *fp )
 
   if( ungetc( c, fp ) == EOF )
     {
-      bug("%s: EOF encountered on ungetc.\r\n", __FUNCTION__);
+      bug("%s: EOF encountered on ungetc.\r\n", __func__);
 
       if ( fBootDb )
 	exit( EXIT_FAILURE );
@@ -536,7 +536,7 @@ char *fread_word( FILE *fp )
 	{
 	  if( ungetc( *pword, fp ) == EOF )
 	    {
-	      bug("%s: EOF encountered on ungetc.\r\n", __FUNCTION__);
+	      bug("%s: EOF encountered on ungetc.\r\n", __func__);
 
 	      if ( fBootDb )
 		exit( EXIT_FAILURE );

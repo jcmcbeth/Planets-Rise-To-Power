@@ -67,7 +67,7 @@ void os_setup( void )
   if( WSAStartup( MAKEWORD( 2, 2 ), &wsaData ) != 0 )
   {
     fprintf( out_stream, "%s (%s:%d) - WSAStartup failed.\n",
-	__FUNCTION__, __FILE__, __LINE__ );
+	__func__, __FILE__, __LINE__ );
     exit( 1 );
   }
 }

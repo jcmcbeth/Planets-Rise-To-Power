@@ -4200,7 +4200,7 @@ void do_astat( CHAR_DATA * ch, char *argument )
     ch_printf( ch, "This room is not in an area!\r\n" );
     bug
       ( "%s (%s:%d) Room not in an area, and ROOM_SPACECRAFT flag not set.",
-	__FUNCTION__, __FILE__, __LINE__ );
+	__func__, __FILE__, __LINE__ );
   }
 }
 

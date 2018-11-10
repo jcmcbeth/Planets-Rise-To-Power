@@ -108,21 +108,21 @@ void os_setup( void )
   if( !( SocketBase = OpenLibrary( (CONST_STRPTR) "bsdsocket.library", 2 ) ) )
   {
     fprintf( out_stream, "%s (%s:%d) - Failed to open bsdsocket.library v2+\n",
-	__FUNCTION__, __FILE__, __LINE__ );
+	__func__, __FILE__, __LINE__ );
     exit( 1 );
   }
 
   if( !( UserGroupBase = OpenLibrary( (CONST_STRPTR) "usergroup.library", 0 ) ) )
   {
     fprintf( out_stream, "%s (%s:%d) - Failed to open usergroup.library\n",
-	__FUNCTION__, __FILE__, __LINE__ );
+	__func__, __FILE__, __LINE__ );
     exit( 1 );
   }
 
   if( !( UtilityBase = (struct UtilityBase*) OpenLibrary( (CONST_STRPTR) "utility.library", 37 ) ) )
   {
     fprintf( out_stream, "%s (%s:%d) - Failed to open utility.library\n",
-	__FUNCTION__, __FILE__, __LINE__ );
+	__func__, __FILE__, __LINE__ );
     exit( 1 );
   }
 
@@ -130,7 +130,7 @@ void os_setup( void )
   if( !( DynLoadBase = OpenLibrary( (CONST_STRPTR) "dynload.library", 51 ) ) )
   {
     fprintf( out_stream, "%s (%s:%d) - Failed to open dynload.library\n",
-	__FUNCTION__, __FILE__, __LINE__ );
+	__func__, __FILE__, __LINE__ );
     exit( 1 );
   }
 #endif

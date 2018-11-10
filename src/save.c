@@ -918,7 +918,7 @@ void fread_char( CHAR_DATA * ch, FILE * fp, bool preload )
 
     if( word[0] == '\0' )
     {
-      bug( "%s: EOF encountered reading file!", __FUNCTION__ );
+      bug( "%s: EOF encountered reading file!", __func__ );
       word = "End";
     }
 
@@ -1466,7 +1466,7 @@ void fread_obj( CHAR_DATA * ch, FILE * fp, short os_type )
 
     if( word[0] == '\0' )
     {
-      bug( "%s: EOF encountered reading file!", __FUNCTION__ );
+      bug( "%s: EOF encountered reading file!", __func__ );
       word = "End";
     }
 

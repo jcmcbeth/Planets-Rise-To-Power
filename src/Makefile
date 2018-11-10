@@ -1,5 +1,5 @@
 BINARY = swr
-WFLAGS = -Werror -Wall -Wformat-security -Wpointer-arith -Wcast-align -Wwrite-strings -Wshadow -Wextra -Wno-unused-parameter -Wredundant-decls
+WFLAGS = -Wall -Wformat-security -Wpointer-arith -Wcast-align -Wwrite-strings -Wshadow -Wextra -Wno-unused-parameter -Wredundant-decls
 
 #Comment out the next line if your system doesn't have dlsym functionality.
 USE_DLSYM = -DSWR2_USE_DLSYM
