@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="act_comm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="act_info.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="act_move.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="act_obj.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="act_wiz.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="boards.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="build.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clans.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="colony.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="comm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="const.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="copyover.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="db.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fight.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="handler.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="imc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="interp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="magic.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="makeobjs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="misc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="morespace.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mud_comm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mud_prog.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nanny.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="planets.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="player.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="reset.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="save.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="shops.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="skillpackage.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="skills.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="space.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="special.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="swskills.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tables.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="telopt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="track.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="update.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vector3_aux.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vote.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="swr_support\bet.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="swr_support\buffer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="swr_support\file_io.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="swr_support\hashstr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="swr_support\misc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="swr_support\os_amiga.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="swr_support\os_unix.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="swr_support\os_win32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="swr_support\sha256.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="swr_support\string_handling.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="swr_support\time_fun.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="swr_support\vector3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="imc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mud.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="telnet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vector3_aux.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="swr_support\buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="swr_support\os.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="swr_support\os_amiga.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="swr_support\os_unix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="swr_support\os_win32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="swr_support\sha256.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="swr_support\swr_support.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="swr_support\vector3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

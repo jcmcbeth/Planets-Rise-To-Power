@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <Keyword>MakeFileProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakePreprocessorDefinitions>WIN32;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="act_comm.c" />
+    <ClCompile Include="act_info.c" />
+    <ClCompile Include="act_move.c" />
+    <ClCompile Include="act_obj.c" />
+    <ClCompile Include="act_wiz.c" />
+    <ClCompile Include="boards.c" />
+    <ClCompile Include="build.c" />
+    <ClCompile Include="clans.c" />
+    <ClCompile Include="colony.c" />
+    <ClCompile Include="comm.c" />
+    <ClCompile Include="const.c" />
+    <ClCompile Include="copyover.c" />
+    <ClCompile Include="db.c" />
+    <ClCompile Include="fight.c" />
+    <ClCompile Include="handler.c" />
+    <ClCompile Include="imc.c" />
+    <ClCompile Include="interp.c" />
+    <ClCompile Include="magic.c" />
+    <ClCompile Include="makeobjs.c" />
+    <ClCompile Include="misc.c" />
+    <ClCompile Include="morespace.c" />
+    <ClCompile Include="mud_comm.c" />
+    <ClCompile Include="mud_prog.c" />
+    <ClCompile Include="nanny.c" />
+    <ClCompile Include="planets.c" />
+    <ClCompile Include="player.c" />
+    <ClCompile Include="reset.c" />
+    <ClCompile Include="save.c" />
+    <ClCompile Include="shops.c" />
+    <ClCompile Include="skillpackage.c" />
+    <ClCompile Include="skills.c" />
+    <ClCompile Include="space.c" />
+    <ClCompile Include="special.c" />
+    <ClCompile Include="swr_support\bet.c" />
+    <ClCompile Include="swr_support\buffer.c" />
+    <ClCompile Include="swr_support\file_io.c" />
+    <ClCompile Include="swr_support\hashstr.c" />
+    <ClCompile Include="swr_support\misc.c" />
+    <ClCompile Include="swr_support\os_amiga.c" />
+    <ClCompile Include="swr_support\os_unix.c" />
+    <ClCompile Include="swr_support\os_win32.c" />
+    <ClCompile Include="swr_support\sha256.c" />
+    <ClCompile Include="swr_support\string_handling.c" />
+    <ClCompile Include="swr_support\time_fun.c" />
+    <ClCompile Include="swr_support\vector3.c" />
+    <ClCompile Include="swskills.c" />
+    <ClCompile Include="tables.c" />
+    <ClCompile Include="telopt.c" />
+    <ClCompile Include="track.c" />
+    <ClCompile Include="update.c" />
+    <ClCompile Include="vector3_aux.c" />
+    <ClCompile Include="vote.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="imc.h" />
+    <ClInclude Include="mud.h" />
+    <ClInclude Include="swr_support\buffer.h" />
+    <ClInclude Include="swr_support\os.h" />
+    <ClInclude Include="swr_support\os_amiga.h" />
+    <ClInclude Include="swr_support\os_unix.h" />
+    <ClInclude Include="swr_support\os_win32.h" />
+    <ClInclude Include="swr_support\sha256.h" />
+    <ClInclude Include="swr_support\swr_support.h" />
+    <ClInclude Include="swr_support\vector3.h" />
+    <ClInclude Include="telnet.h" />
+    <ClInclude Include="vector3_aux.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

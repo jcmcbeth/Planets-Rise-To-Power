@@ -1,0 +1,9 @@
+5/13/2011
+- Fixed an issue where when any item was checked for in your inventory based on it's type it would always succeed if the character had any items at all.
+- Changed the %U in the prompt to show the All Time Max instead of the max number of users since the last boot
+- The max number of users since the last reboot is not correctly reset on copyover
+5/12/2011
+- Added the skills command
+5/10/2011
+- Fixed an issue where copyover_recover did not restore the number of descriptors
+- Fixed an error in do_immortalize where the emote to the victim was missing a formatting argument

@@ -1,0 +1,2 @@
+5/13/2011
+- Make* commands remove items prior to checking if all of the required materials are available causing those items to be lost. This only occurs if the character had all the required materials when they started making it but had them stolen before they finished.
