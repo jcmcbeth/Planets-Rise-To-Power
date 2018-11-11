@@ -15,7 +15,7 @@ cd swr2/src
 
 make all
 
-cd ../..
+cd ..
 chmod +x run-swr
 
 ./run-swr &
