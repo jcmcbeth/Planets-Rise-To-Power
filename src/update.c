@@ -78,9 +78,8 @@ int hit_gain( CHAR_DATA * ch )
 
   if( IS_AFFECTED( ch, AFF_POISON ) )
     gain /= 4;
-
-  // 
-  if ( ch->in_room && IS_SET( ch->in_room->room_flags ) )  
+ 
+  if ( ch->in_room && IS_SET( ch->in_room->room_flags,  ROOM_MEDICAL ) )  
      gain *= CLINIC_HEAL_BONUS;  
 
   if( gain > 0 && ( ch->hit + gain ) == ch->max_hit
