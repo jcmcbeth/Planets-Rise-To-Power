@@ -10,7 +10,7 @@ Using Ubuntu Server 18.10 use the following commands:
 ```bash
 sudo apt-get install csh make gcc libz-dev
 
-git clone https://github.com/jcmcbeth/swr2.git
+git clone https://github.com/jcmcbeth/Planets-Rise-To-Power.git
 cd swr2/src
 
 make all
