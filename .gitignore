@@ -50,3 +50,8 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# SWR data files
+system/bugs.txt
+system/boot.txt
+swr

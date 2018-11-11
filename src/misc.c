@@ -61,36 +61,9 @@ void do_clone( CHAR_DATA * ch, char *argument )
    credits = ch->gold;
    ch->gold = 0;
    played = ch->played;
-   salary = ch->pcdata->salary;
-   ch->pcdata->salary = 0;
 
-   if( ch->pcdata->clan_name && ch->pcdata->clan_name[0] != '\0' )
-   {
-      strcpy( clanname, ch->pcdata->clan_name );
-      STRFREE( ch->pcdata->clan_name );
-      ch->pcdata->clan_name = STRALLOC( "" );
+   save_clone( ch );
 
-      if( ch->pcdata->bestowments )
-      {
-         strcpy( bestowments, ch->pcdata->bestowments );
-         STRFREE( ch->pcdata->bestowments );
-         ch->pcdata->bestowments = STRALLOC( "" );
-      }
-
-      save_clone( ch );
-
-      STRFREE( ch->pcdata->clan_name );
-      ch->pcdata->clan_name = STRALLOC( clanname );
-      if( bestowments[0] != '\0' )
-      {
-         STRFREE( ch->pcdata->bestowments );
-         ch->pcdata->bestowments = STRALLOC( bestowments );
-      }
-   }
-   else
-      save_clone( ch );
-
-   ch->pcdata->salary = salary;
    ch->plr_home = home;
    ch->gold = credits;
    

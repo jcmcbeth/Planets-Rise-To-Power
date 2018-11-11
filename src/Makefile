@@ -11,7 +11,7 @@ IMC = 1
 DEBUG_TELNET = -DSWR2_DEBUG_TELNET=0
 
 CCFLAGS = -g3 -MMD $(WFLAGS) -Iswr_support $(USE_DLSYM) $(DEBUG_TELNET)
-LDFLAGS = -lm -Lswr_support -lswr_support -Wl,-rpath,./src/swr_support -lz
+LDFLAGS = -lm -Lswr_support -lswr_support -Wl,-rpath,./src/swr_support -lm -lz
 
 #On some systems (e.g. FreeBSD) you may need to remove -ldl
 ifdef USE_DLSYM

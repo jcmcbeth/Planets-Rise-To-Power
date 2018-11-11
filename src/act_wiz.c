@@ -4114,13 +4114,13 @@ void add_command( CMDTYPE * command )
  */
 void do_cset( CHAR_DATA * ch, char *argument )
 {
-  char arg1[MAX_INPUTLENGTH];
+  char arg1[MAX_INPUT_LENGTH];
   
 	set_char_color( AT_IMMORT, ch );
 
 	if ( IS_NPC( ch ) )
 	{
-    send_to_char( "You can't do that, you're not a real person." );
+    send_to_char( "You can't do that, you're not a real person.", ch );
     return;
 	}
 
@@ -4129,17 +4129,17 @@ void do_cset( CHAR_DATA * ch, char *argument )
 
 	if ( arg1[0] == '\0' )
 	{
-		send_to_char( "Syntax: cset <field> <value> \r\n" );
-    send_to_char( "Syntax: cset save\r\n" );
-    send_to_char( "Field being one of: \r\n" );
-    send_to_char( "  officials" );
+		send_to_char( "Syntax: cset <field> <value> \r\n", ch );
+    send_to_char( "Syntax: cset save\r\n", ch );
+    send_to_char( "Field being one of: \r\n", ch );
+    send_to_char( "  officials", ch );
 	}
 
   if ( !str_cmp( arg1, "save" ) )
   {
     save_sysdata();
 
-    send_to_char( "System data saved.\r\n" );
+    send_to_char( "System data saved.\r\n", ch );
     return;
   }
 
@@ -4148,7 +4148,7 @@ void do_cset( CHAR_DATA * ch, char *argument )
     STRFREE( sysdata.officials );
     sysdata.officials = STRALLOC( argument );
 
-    send_to_char( "Done.\r\n" );
+    send_to_char( "Done.\r\n", ch );
     return;
   }
 
